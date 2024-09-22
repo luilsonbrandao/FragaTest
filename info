@@ -1,0 +1,7 @@
+Dependências Globais
+
+nodemon
+typscript
+ts-node 
+
+npm install -g nodemon typescript ts-node

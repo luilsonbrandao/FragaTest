@@ -1,0 +1,29 @@
+
+{{>partials/header}}
+
+{{#banner}}
+<section class="banner" style="background-image: url('images/{{background}}')">{{title}}</section>
+<h2>{{title}} DISPONÍVEIS</h2>
+{{/banner}}
+
+<div class="container list">
+    {{#list}}
+        <div class="item">
+        <img src="/images/{{imagem}}" class="item--image" />
+        <div class="item--name">{{nome}}</div>
+        <div class="item--type">{{type}}</div>
+        <div class="item--origem"><b>Origem:</b> {{origem}}</div>
+        <div class="item--descricao"><b>Descrição:</b> {{descricao}}</div>
+        <div class="item--beneficios"><b>Benefícios:</b> {{beneficios}}</div>
+        <div class="item--uso"><b>Uso:</b> {{uso}}</div>
+    </div>
+    {{/list}}
+</div>
+
+{{^list}}
+    <div class="container no-list">
+        <h2>Não há Temperos disponíveis para essa consulta.</h2>
+    </div>
+{{/list}}
+
+{{>partials/footer}}

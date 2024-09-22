@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fraga Esse Tempero </title>
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="icon" type="image/png" href="/images/favicon.png" />
+</head>
+<body>
+<header>
+    <div class="container">
+        <a href="/">Fraga Esse Tempero</a>
+        <form method="GET" action="/search">
+            <input type="search" name="q" placeholder="Pesquise por Tempero" value="{{ query }}" />
+        </form>
+    </div>
+</header>
+<nav>
+    <ul>
+        <li class="{{#menu.all}}active{{/menu.all}}"><a href="/">Todos</a></li>
+        <li class="{{#menu.regionais}}active{{/menu.regionais}}"><a href="/regionais">Temperos Regionais</a></li>
+        <li class="{{#menu.mundo}}active{{/menu.mundo}}"><a href="/mundo">Especiarias do Mundo</a></li>
+        <li class="{{#menu.funcionais}}active{{/menu.funcionais}}"><a href="/funcionais">Ervas e Temperos Funcionais</a></li>
+    </ul>
+</nav>
